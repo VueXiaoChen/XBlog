@@ -1,0 +1,4 @@
+###
+GET http://localhost:8080/collect/find?userId=4&blogId=10
+###
+

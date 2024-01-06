@@ -1,6 +1,6 @@
-package com.example.xblog.domain;
+package com.example.xblog.req;
 
-public class Likes {
+public class CollectReq {
     private Integer id;
 
     private Integer blogId;
@@ -9,7 +9,7 @@ public class Likes {
 
     private String module;
 
-    private Integer like;
+    private Integer collect;
 
     public Integer getId() {
         return id;
@@ -43,12 +43,12 @@ public class Likes {
         this.module = module;
     }
 
-    public Integer getLike() {
-        return like;
+    public Integer getCollect() {
+        return collect;
     }
 
-    public void setLike(Integer like) {
-        this.like = like;
+    public void setCollect(Integer collect) {
+        this.collect = collect;
     }
 
     @Override
@@ -61,7 +61,7 @@ public class Likes {
         sb.append(", blogId=").append(blogId);
         sb.append(", userId=").append(userId);
         sb.append(", module=").append(module);
-        sb.append(", like=").append(like);
+        sb.append(", collect=").append(collect);
         sb.append("]");
         return sb.toString();
     }

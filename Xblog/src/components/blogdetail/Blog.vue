@@ -21,15 +21,12 @@ async function GetBlogById(id){
         blog.value=res.data.data.list[0] 
     }))
 }
-
-
-
 const tagsArr = ref(["后端","Java","面试"])
+
 watch(
   () => bolgid.value,
     (val, oldVal) => {
         GetBlogById(bolgid.value)
-      
     },
     {
         immediate: true,

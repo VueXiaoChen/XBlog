@@ -1,6 +1,6 @@
-package com.example.xblog.domain;
+package com.example.xblog.req;
 
-public class Likes {
+public class LikesReq {
     private Integer id;
 
     private Integer blogId;

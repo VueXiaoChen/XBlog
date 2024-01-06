@@ -3,8 +3,10 @@ package com.example.xblog.mapper;
 import com.example.xblog.domain.Likes;
 import com.example.xblog.domain.LikesExample;
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+@Mapper
 public interface LikesMapper {
     long countByExample(LikesExample example);
 

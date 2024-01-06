@@ -353,6 +353,66 @@ public class CollectExample {
             addCriterion("`module` not between", value1, value2, "module");
             return (Criteria) this;
         }
+
+        public Criteria andCollectIsNull() {
+            addCriterion("`collect` is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectIsNotNull() {
+            addCriterion("`collect` is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectEqualTo(Integer value) {
+            addCriterion("`collect` =", value, "collect");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectNotEqualTo(Integer value) {
+            addCriterion("`collect` <>", value, "collect");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectGreaterThan(Integer value) {
+            addCriterion("`collect` >", value, "collect");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectGreaterThanOrEqualTo(Integer value) {
+            addCriterion("`collect` >=", value, "collect");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectLessThan(Integer value) {
+            addCriterion("`collect` <", value, "collect");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectLessThanOrEqualTo(Integer value) {
+            addCriterion("`collect` <=", value, "collect");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectIn(List<Integer> values) {
+            addCriterion("`collect` in", values, "collect");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectNotIn(List<Integer> values) {
+            addCriterion("`collect` not in", values, "collect");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectBetween(Integer value1, Integer value2) {
+            addCriterion("`collect` between", value1, value2, "collect");
+            return (Criteria) this;
+        }
+
+        public Criteria andCollectNotBetween(Integer value1, Integer value2) {
+            addCriterion("`collect` not between", value1, value2, "collect");
+            return (Criteria) this;
+        }
     }
 
     public static class Criteria extends GeneratedCriteria {

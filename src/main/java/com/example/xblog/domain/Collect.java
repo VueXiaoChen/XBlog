@@ -9,6 +9,8 @@ public class Collect {
 
     private String module;
 
+    private Integer collect;
+
     public Integer getId() {
         return id;
     }
@@ -41,6 +43,14 @@ public class Collect {
         this.module = module;
     }
 
+    public Integer getCollect() {
+        return collect;
+    }
+
+    public void setCollect(Integer collect) {
+        this.collect = collect;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -51,6 +61,7 @@ public class Collect {
         sb.append(", blogId=").append(blogId);
         sb.append(", userId=").append(userId);
         sb.append(", module=").append(module);
+        sb.append(", collect=").append(collect);
         sb.append("]");
         return sb.toString();
     }

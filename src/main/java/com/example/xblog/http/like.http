@@ -1,0 +1,3 @@
+###
+GET http://localhost:8080/likes/find?userId=4&blogId=26
+###

@@ -52,6 +52,7 @@ onMounted(()=>{
                 <div style="color: #888">
                     <span>阅读</span> <span>{{ item.readCount }}</span>
                     <span style="margin-left: 10px">点赞</span> <span>{{ item.likesCount }}</span>
+                    <span style="margin-left: 10px">收藏</span> <span>{{ item.likesCount }}</span>
                 </div>
             </div>
         </div>
